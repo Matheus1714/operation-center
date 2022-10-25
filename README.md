@@ -1,4 +1,4 @@
-# Space Operations Center (SOC)
+# Space Operations Center (SOC) Using [COSMOS](https://ballaerospace.github.io/cosmos-website/)
 
 ![](img/overview.png)
 
@@ -19,4 +19,37 @@ To install COSMOS just follow the [Installation Guide COSMOS](https://ballaerosp
 The [Core Flight System (cFS)](https://github.com/nasa/cFS) is a generic flight software architecture framework used on flagship spacecraft, human spacecraft, cubesats, and **Raspberry Pi**. 
 
 [COSMOS](https://ballaerospace.github.io/cosmos-website/) has an integration with cFS, in which cFS is used as an external agent that sends and receives COSMOS telecommands. This integration is descript in [COSMOS and NASA cFS](https://ballaerospace.github.io/cosmos-website/docs/v5/cfs).
+
+## Build & Run
+
+### Build & Run COSMOS [Docker](https://www.docker.com/) Container 
+
+For run the COSMOS execute the commands in directory `COSMOS/`:
+
+```sh
+sudo ./cosmos-control.sh start
+```
+
+With this command, a container will be created in [Docker](https://www.docker.com/) with the application running. After all operations are done, just enter the address: [http://localhost:2900](http://localhost:2900).
+
+To stop using the container, just use:
+
+```sh
+sudo ./cosmos-control.sh stop
+```
+
+For more information, execute:
+
+```sh
+sudo ./cosmos-control.sh help
+```
+
+### Build & Run cFS
+
+To Build and Run cFS Docker Container execute the command in directory `cFS/` .
+
+```sh
+sudo docker build -t cfs .
+sudo docker run --cap-add CAP_SYS_RESOURCE --net=cosmos_default --name cfs -p1234:1234 -p1235:1235 cfs
+```
 
