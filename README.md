@@ -42,7 +42,7 @@ For run the COSMOS execute the commands in directory `COSMOS/`:
 sudo ./cosmos-control.sh start
 ```
 
-With this command, a container will be created in [Docker](https://www.docker.com/) with the application running. After all operations are done, just enter the address: <a href="http://localhost:2900" target="_blank" >http://localhost:2900</a>.
+With this command, a container will be created in <a href="https://www.docker.com/" target="_blank" >Docker</a> with the application running. After all operations are done, just enter the address: <a href="http://localhost:2900" target="_blank" >http://localhost:2900</a>.
 
 To stop using the container, just use:
 
