@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>README</title>
+</head>
+<body>
+
 # Space Operations Center (SOC) Using [COSMOS](https://ballaerospace.github.io/cosmos-website/)
 
 ![](img/overview.png)
@@ -30,7 +42,7 @@ For run the COSMOS execute the commands in directory `COSMOS/`:
 sudo ./cosmos-control.sh start
 ```
 
-With this command, a container will be created in [Docker](https://www.docker.com/) with the application running. After all operations are done, just enter the address: [http://localhost:2900](http://localhost:2900).
+With this command, a container will be created in [Docker](https://www.docker.com/) with the application running. After all operations are done, just enter the address: <a href="http://localhost:2900" target="_blank" >http://localhost:2900</a>.
 
 To stop using the container, just use:
 
@@ -52,4 +64,8 @@ To Build and Run cFS Docker Container execute the command in directory `cFS/` .
 sudo docker build -t cfs .
 sudo docker run --cap-add CAP_SYS_RESOURCE --net=cosmos_default --name cfs -p1234:1234 -p1235:1235 cfs
 ```
+
+
+</body>
+</html>
 
