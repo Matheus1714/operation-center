@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "vetur.validation.template": false,
+    "eslint.validate": [
+      "vue",
+      "html",
+      "javascript"
+    ],
+    "eslint.workingDirectories": [
+      "./cosmos-init/plugins"
+    ],
+    "eslint.packageManager": "yarn",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "explorer.confirmDragAndDrop": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "vetur.completion.scaffoldSnippetSources": {
+      "workspace": "",
+      "user": "",
+      "vetur": ""
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.ignoreLimitWarning": true,
+    "ruby.rubocop.onSave": true,
+    "ruby.format": "rubocop",
+  },
+  "files.associations": {}
+}
