@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
     <title>README</title>
 </head>
@@ -42,7 +42,9 @@ For run the COSMOS execute the commands in directory `COSMOS/`:
 sudo ./cosmos-control.sh start
 ```
 
-With this command, a container will be created in <a href="https://www.docker.com/" target="_blank" >Docker</a> with the application running. After all operations are done, just enter the address: <a href="http://localhost:2900" target="_blank" >http://localhost:2900</a>.
+With this command, a container will be created in <a href="https://www.docker.com/" target="_blank" >Docker </a> with the application running. After all operations are done, just enter the address: <a href="http://localhost:2900" target="_blank" >http://localhost:2900 </a>.
+
+
 
 To stop using the container, just use:
 
