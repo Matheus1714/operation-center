@@ -1,0 +1,15 @@
+# Set VARIABLEs here to allow variation in your plugin
+# See https://cosmosc2.com/docs/v5/plugins for more information
+
+VARIABLE ip 127.0.0.1
+VARIABLE port_tm 1235
+VARIABLE port_tc 1234
+VARIABLE cfs_target_name CFS
+
+# Modify this according to your actual target connection
+# See https://cosmosc2.com/docs/v5/interfaces for more information
+
+TARGET CFS <%= cfs_target_name %>
+# hostname   write_dest_port   read_port   write_src_port   interface_address   ttl   write_timeout   read_timeout   bind_address
+INTERFACE <%= cfs_target_name %>_INT udp_interface.rb <%= ip %> <%= port_tc %> <%= port_tm %> nil nil 128 nil nil
+  MAP_TARGET <%= cfs_target_name %>
