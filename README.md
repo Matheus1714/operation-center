@@ -62,6 +62,12 @@ The <a href="https://github.com/nasa/cFS" target="_blank">Core Flight System (cF
     sudo docker build -t cfs .
     sudo docker run --cap-add CAP_SYS_RESOURCE --net=cosmos_default --name cfs -p1234:1234 -p1235:1235 cfs
 
+<h3>Build GemSpec Files</h3>
+
+<p>If during the execution of the plugin there is a problem to generate the <a href="https://guides.rubygems.org/make-your-own-gem/" target="_blank">gem file </a>, then it is necessary to execute the execution manually with the command:</p>
+
+    gem build file.gemspec
+
 </body>
 </html>
 
